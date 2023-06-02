@@ -60,7 +60,7 @@ body {
   list-style: none;
   padding: 20px 10px 0 10px;
   margin: 0;
-  max-height: 500px;
+  max-height: 600px;
   overflow: auto;
 }
 .messages .message {
@@ -90,12 +90,10 @@ body {
 }
 
 .messages .message.right {
-  width: 50%;
   float: right;
 }
 
 .messages .message.left {
-  width: 50%;
   float: left;
 }
 
@@ -106,7 +104,7 @@ body {
 .messages .message.right .text_wrapper {
   background-color: #c7eafc;
   margin-right: 20px;
-  float: right;
+  /* float: right; */
 }
 .messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
   left: 100%;
