@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var _findIndex = require('lodash/findIndex') // npm install lodash --save
 var server = require('http').Server(app);
-var port = (process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 6969);
+var port = (process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3001);
 var io = require('socket.io')(server);
 server.listen(port, () => console.log('Server running in port ' + port));
 

@@ -22,7 +22,7 @@ export default class App extends React.Component {
    }
    //Connetct với server nodejs, thông qua socket.io
    UNSAFE_componentWillMount() {
-       this.socket = io('localhost:6969');
+       this.socket = io('localhost:3001');
        this.socket.on('id', res =>this.setState({user: res})) // lắng nghe event có tên 'id'
        this.socket.on('name', res =>this.setState({name: res})) // lắng nghe event có tên 'name'
        this.socket.on('newMessage', (response) => {this.newMessage(response)}); //lắng nghe event 'newMessage' và gọi hàm newMessage khi có event
